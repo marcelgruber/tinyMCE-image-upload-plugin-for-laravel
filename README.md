@@ -7,7 +7,7 @@ This is the simplest implementation of a tinyMCE plugin for integrating with Lar
 ## Installation
 The plugin only has 4 files all under 1MB in size and are arranged in 2 folders.
 
-**1.** The `/imageupload` folder should be copied into the `js/tinyMCE/plugins` folder as are usualy tinyMCE plugins.
+**1.** The `/imageupload` folder should be copied into the `js/tinyMCE/plugins` folder as tinyMCE plugins usually are.
 
 **2.** The views `_image-dialog.blade.php` and `_image-upload.blade.php` should be put into the Laravel views folder of your choosing.
 
