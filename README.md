@@ -26,17 +26,16 @@ Route::post('route/used/for/image/upload', 'CustomController@imageUpload');
 ```
 
 **CustomController.php** setup:
-
+Here is an example of what the controller would look like.  NOTE: this doesn't provide validation and the name of `test.jpg` is used for all uploaded images.  Further uploads will overwrite the previous versions.
 ```php
 <?php
 
 class CustomController extends Controller {
-  public function imageUpload() {
-  // receives form input file
-  // handle image processing here
-  
-  $file_path = 'http://path.to/image/file.jpg';
-  return view('_image-upload', compact('file_path');
+  public function imageUpload(Request $request) {
+  	$file = $request->file('imagefile');
+  	$file->move('images', 'test.jpg');
+	$file_path = '/images/'.'test.jpg';
+	return view('path.to._image-upload', compact('file_path'));
   }
 }
 ```
