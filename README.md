@@ -73,4 +73,4 @@ Here is an example of the minimal configuration that I use:
 ```
 
 ##You're done!
-Go use your controller function to process the image and save it.  The plugin handles added it to the tinyMCE instance as long as you pass the `$file_path` variable to the view included.
+Go use your controller function to process the image and save it.  The plugin handles adding the image to the tinyMCE instance as long as you pass the `$file_path` variable to the view included.
